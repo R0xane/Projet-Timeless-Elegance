@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 97bd8d605c9c8674d866d609c4decbbd
+  productGUID: 11ee8d8e292041c48bfeaf63af9818a5
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Timeless Elegance
+  productName: montre
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -915,14 +915,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Timeless Elegance
+  metroPackageName: montre
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Timeless Elegance
+  metroApplicationDescription: montre
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -994,11 +994,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: f0bfa3c4-f416-4a68-a533-e62ca3af01b8
+  cloudProjectId: e8035325-38ec-45df-a205-97c89e57bfc5
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Timeless Elegance
-  organizationId: yxauf
+  projectName: montre
+  organizationId: nolwenxn
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
