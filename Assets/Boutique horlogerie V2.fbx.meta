@@ -1,9 +1,109 @@
 fileFormatVersion: 2
-guid: 813bdd22c35986b40ae56964bb9356d9
+guid: 3aa2f44cef9fbd741bb9a1b9be447ea0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HEADlight_on
+    second: {fileID: 2100000, guid: da2ef44406d16464686f7173e7d09e47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MIRROR ground rough white 1
+    second: {fileID: 2100000, guid: 5050e78792186c549821a3700589652c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MIRROR tables
+    second: {fileID: 2100000, guid: b72eb48e349f1d3409429b23a65852dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_1
+    second: {fileID: 2100000, guid: 0d2dc79d594ceb64f83b87da83b05c64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Min\xE9rale_b\xE9ton cir\xE9_gris"
+    second: {fileID: 2100000, guid: 7e0c0abdc2e8c2f49a19a4738a27456b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirror
+    second: {fileID: 2100000, guid: d5ae109c3667f634c865f323372af1ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mur 2
+    second: {fileID: 2100000, guid: ea45fd0d077770d4c9ffab20c16554b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mur 2 red
+    second: {fileID: 2100000, guid: d8ba54e2cde190944b825ae8c8d002b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RAL-1016
+    second: {fileID: 2100000, guid: 679097a521e6c774eaaeefd6381cec2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RAL-5015
+    second: {fileID: 2100000, guid: 3e7af81f964c66a4c83f9ab2d1338a2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Watch LS 2024
+    second: {fileID: 2100000, guid: ac336901fa3a4cc4c962fde3e491c035, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White sphere
+    second: {fileID: 2100000, guid: 927de508b60f9e2459ca9997c62a2193, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: alcantara dark
+    second: {fileID: 2100000, guid: fba38d226ab58f24991fe834d667d845, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black high gloss plastic
+    second: {fileID: 2100000, guid: eb07d6422cda81f4d9e66f5544c42cbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brushed aluminum
+    second: {fileID: 2100000, guid: fa4d0a95d3e5ff54f96d1a98c4af04c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark wood
+    second: {fileID: 2100000, guid: 7873cd717d41eb34f93b2dbcccab68dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_glass
+    second: {fileID: 2100000, guid: cc248513d7af44c4691dd6d84cf55c06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default_material
+    second: {fileID: 2100000, guid: 9d1a337e8f221e34cb651154272e98d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor_concrete_tile
+    second: {fileID: 2100000, guid: 7cd1addfe8798f84ca0958e1cb343982, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: 185c2de80cb913a4ca80825895c2c177, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
