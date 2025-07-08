@@ -17,7 +17,7 @@ public class LaunchScreen : MonoBehaviour
 
     public void ClickedButton()
     {
-        launchPanel.SetActive(false);
+        //launchPanel.SetActive(false);
         SceneManager.LoadScene("Real Scene");
     }
 
