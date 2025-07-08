@@ -648,6 +648,62 @@ PrefabInstance:
       propertyPath: m_SmoothPosition
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1124533322}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1124533322}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSelectExited
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSelectEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WatchInfoDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WatchInfoDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6957000769822834732, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3396,10 +3452,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0a6800a9b134226ba35ed564093cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nom: Montre 3
-  materiaux: Fer
-  prix: 15
-  infoPanelCanvasPrefab: {fileID: 5424835841706909918, guid: 5ad92c8308ed5460b9bb3d5116b8de33, type: 3}
+  nom: 
+  materiaux: 
+  prix: 0
+  infoPanelCanvasPrefab: {fileID: 0}
 --- !u!1 &396606291
 GameObject:
   m_ObjectHideFlags: 0
@@ -7562,10 +7618,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0a6800a9b134226ba35ed564093cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nom: Montre 4
-  materiaux: "M\xE9tal"
-  prix: 54
-  infoPanelCanvasPrefab: {fileID: 5424835841706909918, guid: 5ad92c8308ed5460b9bb3d5116b8de33, type: 3}
+  nom: 
+  materiaux: 
+  prix: 0
+  infoPanelCanvasPrefab: {fileID: 0}
 --- !u!1 &947564678
 GameObject:
   m_ObjectHideFlags: 0
@@ -7875,7 +7931,6 @@ GameObject:
   m_Component:
   - component: {fileID: 977691204}
   - component: {fileID: 977691203}
-  - component: {fileID: 977691202}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -7883,37 +7938,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &977691202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977691201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
 --- !u!114 &977691203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8070,6 +8094,10 @@ PrefabInstance:
       value: XR Device Simulator
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -8208,10 +8236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0a6800a9b134226ba35ed564093cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nom: Montre 2
-  materiaux: "M\xE9tal"
-  prix: 24
-  infoPanelCanvasPrefab: {fileID: 5424835841706909918, guid: 5ad92c8308ed5460b9bb3d5116b8de33, type: 3}
+  nom: 
+  materiaux: 
+  prix: 0
+  infoPanelCanvasPrefab: {fileID: 0}
 --- !u!4 &1034676347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463188, guid: 7538a3c85f736c74ea56d203349fde92, type: 3}
@@ -8857,10 +8885,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0a6800a9b134226ba35ed564093cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nom: Montre 1
-  materiaux: 'Zinc '
-  prix: 34
-  infoPanelCanvasPrefab: {fileID: 5424835841706909918, guid: 5ad92c8308ed5460b9bb3d5116b8de33, type: 3}
+  nom: ' Rolex Cosmograph Daytona'
+  materiaux: "Acier Oystersteel, lunette c\xE9ramique noire, verre saphir"
+  prix: 1400
+  infoPanelCanvasPrefab: {fileID: 3784036068039437322, guid: 5ad92c8308ed5460b9bb3d5116b8de33, type: 3}
 --- !u!1001 &1131028216
 PrefabInstance:
   m_ObjectHideFlags: 0

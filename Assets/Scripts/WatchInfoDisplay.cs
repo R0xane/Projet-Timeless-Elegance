@@ -9,24 +9,21 @@ public class WatchInfoDisplay : MonoBehaviour
     public float prix;
 
     [Header("UI")]
-    public GameObject infoPanelCanvasPrefab; // Doit contenir un Canvas World Space
+    public GameObject infoPanelCanvasPrefab;
     private GameObject currentPanel;
 
     public void OnSelectEntered()
     {
-        if (infoPanelCanvasPrefab == null || Camera.main == null) return;
+        if (infoPanelCanvasPrefab == null) return;
 
-        currentPanel = Instantiate(infoPanelCanvasPrefab);
+        // Instantie le panneau comme enfant de l'objet sélectionné
+        currentPanel = Instantiate(infoPanelCanvasPrefab, transform);
 
-        // Positionne le panneau à gauche + devant la tête du joueur
-        Transform cam = Camera.main.transform;
-        Vector3 offset = cam.right * -0.4f + cam.up * 0.2f + cam.forward * 0.6f;
-        currentPanel.transform.position = cam.position + offset;
+        // Place à (0,0,0) en local
+        currentPanel.transform.localPosition = Vector3.zero;
+        currentPanel.transform.localRotation = Quaternion.identity;
 
-        // Oriente le panneau pour faire face au joueur
-        currentPanel.transform.LookAt(cam);
-        currentPanel.transform.Rotate(0, 180, 0);
-
+        // Remplit les infos du texte
         TMP_Text[] texts = currentPanel.GetComponentsInChildren<TMP_Text>();
         foreach (TMP_Text t in texts)
         {
