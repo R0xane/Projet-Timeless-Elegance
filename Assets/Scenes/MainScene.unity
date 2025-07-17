@@ -1853,7 +1853,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 143699205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202933407}
+        m_TargetAssemblyTypeName: AddToSelectionAudio, Assembly-CSharp
+        m_MethodName: PlayConfirmation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &143699205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2153,6 +2165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202933405}
   - component: {fileID: 202933406}
+  - component: {fileID: 202933407}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -2317,6 +2330,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &202933407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202933404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106fe3afd7dea477884d7e860e21b602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1260815236}
+  confirmationClip: {fileID: 8300000, guid: 86c388b56231a41a787ddf83f4011189, type: 3}
 --- !u!1 &203866398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,7 +5573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &482087735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7040,7 +7067,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 699578701}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202933407}
+        m_TargetAssemblyTypeName: AddToSelectionAudio, Assembly-CSharp
+        m_MethodName: PlayConfirmation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &699578701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7098,7 +7137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &701561020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8358,7 +8397,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 790310731}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202933407}
+        m_TargetAssemblyTypeName: AddToSelectionAudio, Assembly-CSharp
+        m_MethodName: PlayConfirmation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &790310731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12832,7 +12883,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1317384718}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202933407}
+        m_TargetAssemblyTypeName: AddToSelectionAudio, Assembly-CSharp
+        m_MethodName: PlayConfirmation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1317384718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13475,7 +13538,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1373971266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202933407}
+        m_TargetAssemblyTypeName: AddToSelectionAudio, Assembly-CSharp
+        m_MethodName: PlayConfirmation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1373971266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17710,7 +17785,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2023570749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202933407}
+        m_TargetAssemblyTypeName: AddToSelectionAudio, Assembly-CSharp
+        m_MethodName: PlayConfirmation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2023570749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18231,7 +18318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2096366942
 MonoBehaviour:
   m_ObjectHideFlags: 0
