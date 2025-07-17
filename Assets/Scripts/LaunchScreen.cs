@@ -18,7 +18,7 @@ public class LaunchScreen : MonoBehaviour
     public void ClickedButton()
     {
         //launchPanel.SetActive(false);
-        SceneManager.LoadScene("Real Scene");
+        SceneManager.LoadScene("MainScene");
     }
 
     private string GenerateRandomSessionId()

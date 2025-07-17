@@ -4,61 +4,105 @@ using TMPro;
 
 public class DialogueButtons : MonoBehaviour
 {
-    public GameObject infoCanvas;
-    public float displayDuration = 5f;
+    public Animator vendeurAnimator;
     public static bool peutEssayerMontre = false;
 
-    [Header("Notification intégrée")]
-    public GameObject notificationPanel; // Peut être un Text ou un Panel contenant du texte
-    public TMP_Text notificationText;
-    public float notifDuration = 5f;
+    [Header("Audio du vendeur")]
+    public AudioSource vendeurAudioSource;
+    public AudioClip clipInfo;
+    public AudioClip clipEssayer;
+    public AudioClip clipQuitter;
+
+    [Header("Zoom miroir")]
+
+    public Transform xrRig;
+    public Transform miroirFocusPoint;
+    public float rotationSpeed = 3f;
 
     public void OnInfoPressed()
     {
-        if (infoCanvas != null)
-        {
-            infoCanvas.SetActive(true);
-            StopAllCoroutines();
-            StartCoroutine(HideInfoAfterDelay());
-        }
+        PlayVoice(clipInfo);
     }
 
     public void OnEssayerMontrePressed()
     {
         peutEssayerMontre = true;
-        ShowNotification("Vous pouvez maintenant essayer les montres");
+
+        PlayVoice(clipEssayer);
+        if (xrRig != null && miroirFocusPoint != null)
+            StartCoroutine(RotateRigToward(miroirFocusPoint));
     }
 
     public void OnQuitterPressed()
     {
-
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #else
-                Application.Quit();
-        #endif
+        if (vendeurAudioSource != null && clipQuitter != null)
+        {
+            PlayVoice(clipQuitter);
+            StartCoroutine(QuitAfterClip(clipQuitter.length));
+        }
+        else
+        {
+            QuitApplication();
+        }
     }
 
-    private IEnumerator HideInfoAfterDelay()
+    private IEnumerator QuitAfterClip(float delay)
     {
-        yield return new WaitForSeconds(displayDuration);
-        infoCanvas.SetActive(false);
+        yield return new WaitForSeconds(delay);
+        QuitApplication();
     }
 
-    private void ShowNotification(string message)
+    private void QuitApplication()
     {
-        if (notificationPanel == null || notificationText == null) return;
-
-        notificationText.text = message;
-        notificationPanel.SetActive(true);
-
-        StopAllCoroutines(); // pour éviter que plusieurs timers se chevauchent
-        StartCoroutine(HideNotificationAfterDelay());
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
-    private IEnumerator HideNotificationAfterDelay()
+    private void PlayVoice(AudioClip clip)
     {
-        yield return new WaitForSeconds(notifDuration);
-        notificationPanel.SetActive(false);
+        if (vendeurAudioSource != null && clip != null)
+        {
+            vendeurAudioSource.Stop();
+            vendeurAudioSource.clip = clip;
+            vendeurAudioSource.Play();
+
+            if (vendeurAnimator != null)
+                vendeurAnimator.SetBool("IsTalking", true);
+
+            StartCoroutine(StopTalkingAfterDelay(clip.length));
+        }
     }
+
+    private IEnumerator StopTalkingAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (vendeurAnimator != null)
+            vendeurAnimator.SetBool("IsTalking", false);
+    }
+    
+    private IEnumerator RotateRigToward(Transform target)
+    {
+        Vector3 direction = target.position - xrRig.position;
+        direction.y = 0; 
+
+        Quaternion targetRotation = Quaternion.LookRotation(direction);
+        Quaternion initialRotation = xrRig.rotation;
+
+        float elapsed = 0f;
+        float duration = 0.8f;
+
+        while (elapsed < duration)
+        {
+            xrRig.rotation = Quaternion.Slerp(initialRotation, targetRotation, elapsed / duration);
+            elapsed += Time.deltaTime * rotationSpeed;
+            yield return null;
+        }
+
+        xrRig.rotation = targetRotation;
+    }
+
 }
